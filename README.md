@@ -2,26 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-BSD-blue.svg)](LICENSE)
 
-By [Zisian Wong](https://github.com/zisianw), [Shifeng Zhang](http://www.cbsr.ia.ac.cn/users/sfzhang/)
-
 A [PyTorch](https://pytorch.org/) implementation of [FaceBoxes: A CPU Real-time Face Detector with High Accuracy](https://arxiv.org/abs/1708.05234). The official code in Caffe can be found [here](https://github.com/sfzhang15/FaceBoxes).
-
-## Performance
-| Dataset | Original Caffe | PyTorch Implementation |
-|:-|:-:|:-:|
-| AFW | 98.98 % | 98.47% |
-| PASCAL | 96.77 % | 96.84% |
-| FDDB | 95.90 % | 95.44% |
-
-## Citation
-Please cite the paper in your publications if it helps your research:
-
-    @inproceedings{zhang2017faceboxes,
-      title = {Faceboxes: A CPU Real-time Face Detector with High Accuracy},
-      author = {Zhang, Shifeng and Zhu, Xiangyu and Lei, Zhen and Shi, Hailin and Wang, Xiaobo and Li, Stan Z.},
-      booktitle = {IJCB},
-      year = {2017}
-    }
 
 ### Contents
 - [Requirements](#requirements)
@@ -29,6 +10,9 @@ Please cite the paper in your publications if it helps your research:
 - [Live View](#live-view)
 - [Training](#training)
 - [Evaluation](#evaluation)
+- [Copyright](#copyright)
+- [Performance)(#performance)
+- [Citation](#citation)
 - [References](#references)
 
 ## Requirements
@@ -104,6 +88,29 @@ python3 test.py --cpu
 ```
 
 3. Download [eval_tool](https://bitbucket.org/marcopede/face-eval) to evaluate the performance.
+
+## Copyright
+
+Algorithm and original code by: [Zisian Wong](https://github.com/zisianw), [Shifeng Zhang](http://www.cbsr.ia.ac.cn/users/sfzhang/)
+
+Live view by: [Tomi Maila](https://github.com/tmaila).
+
+## Performance
+| Dataset | Original Caffe | PyTorch Implementation |
+|:-|:-:|:-:|
+| AFW | 98.98 % | 98.47% |
+| PASCAL | 96.77 % | 96.84% |
+| FDDB | 95.90 % | 95.44% |
+
+## Citation
+Please cite the paper in your publications if it helps your research:
+
+    @inproceedings{zhang2017faceboxes,
+      title = {Faceboxes: A CPU Real-time Face Detector with High Accuracy},
+      author = {Zhang, Shifeng and Zhu, Xiangyu and Lei, Zhen and Shi, Hailin and Wang, Xiaobo and Li, Stan Z.},
+      booktitle = {IJCB},
+      year = {2017}
+    }
     
 ## References
 - [Official release (Caffe)](https://github.com/sfzhang15/FaceBoxes)
