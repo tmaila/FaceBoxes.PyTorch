@@ -11,7 +11,7 @@ A [PyTorch](https://pytorch.org/) implementation of [FaceBoxes: A CPU Real-time 
 - [Training](#training)
 - [Evaluation](#evaluation)
 - [Copyright](#copyright)
-- [Performance)](#performance)
+- [Performance](#performance)
 - [Citation](#citation)
 - [References](#references)
 
@@ -30,10 +30,10 @@ pip3 install numpy opencv-python Cython
 
 4. Clone this repository. We will call the cloned directory as `$FaceBoxes_ROOT`.
 ```Shell
-git clone https://github.com/zisianw/FaceBoxes.PyTorch.git
+git clone https://github.com/tmaila/FaceBoxes.PyTorch.git
 ```
 
-5. Compile the nms:
+5. Compile the Non-Maximum Suppression algorithm:
 ```Shell
 ./make.sh
 ``` 
