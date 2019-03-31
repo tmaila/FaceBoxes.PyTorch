@@ -1,0 +1,7 @@
+.vscode
+data
+eval
+weights
+utils/build
+__pycache__
+*.so
