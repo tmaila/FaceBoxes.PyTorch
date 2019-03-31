@@ -26,7 +26,7 @@ Please cite the paper in your publications if it helps your research:
 ### Contents
 - [Requirements](#requirements)
 - [Installation](#installation)
-- [Live View](#live view)
+- [Live View](#live-view)
 - [Training](#training)
 - [Evaluation](#evaluation)
 - [References](#references)
@@ -58,7 +58,9 @@ git clone https://github.com/zisianw/FaceBoxes.PyTorch.git
 
 Run live face tracking using
 ```Shell
+# evaluate using cuda
 python3 live.py
+
 # evaluate using cpu
 python3 live.py --cpu
 ```
