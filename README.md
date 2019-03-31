@@ -24,25 +24,47 @@ Please cite the paper in your publications if it helps your research:
     }
 
 ### Contents
+- [Requirements](#requirements)
 - [Installation](#installation)
+- [Live View](#live view)
 - [Training](#training)
 - [Evaluation](#evaluation)
 - [References](#references)
 
-## Installation
-1. Install [PyTorch](https://pytorch.org/) >= v1.0.0 following official instruction.
+## Requirements
 
-2. Clone this repository. We will call the cloned directory as `$FaceBoxes_ROOT`.
+This project is tested with Python 3.6 on Ubuntu 18.04. Python binary in the make.sh is expected to be named python3 following Ubuntu naming convention. Python 3.7 may work but would require recompiling the pyx files in the `utils/nms` folder using the most recent version of Cython. [
+
+## Installation
+1. Install required python packages
+```Shell
+pip3 install numpy opencv-python Cython
+```
+2. Install [CUDA](https://developer.nvidia.com/cuda-downloads) (optional)
+
+3. Install [PyTorch](https://pytorch.org/) >= v1.0.0 following official instruction.
+
+4. Clone this repository. We will call the cloned directory as `$FaceBoxes_ROOT`.
 ```Shell
 git clone https://github.com/zisianw/FaceBoxes.PyTorch.git
 ```
 
-3. Compile the nms:
+5. Compile the nms:
 ```Shell
 ./make.sh
-```
+``` 
 
-_Note: Codes are based on Python 3+._
+## Live View
+
+Run live face tracking using
+```Shell
+python3 live.py
+# evaluate using cpu
+python3 live.py --cpu
+```
+![Live View](https://raw.githubusercontent.com/tmaila/FaceBoxes.PyTorch/master/img/LiveView.png)
+
+Press `q` to exit.
 
 ## Training
 1. Download [WIDER FACE](http://mmlab.ie.cuhk.edu.hk/projects/WIDERFace/index.html) dataset, place the images under this directory:
