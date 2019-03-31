@@ -11,7 +11,7 @@ A [PyTorch](https://pytorch.org/) implementation of [FaceBoxes: A CPU Real-time 
 - [Training](#training)
 - [Evaluation](#evaluation)
 - [Copyright](#copyright)
-- [Performance)(#performance)
+- [Performance)](#performance)
 - [Citation](#citation)
 - [References](#references)
 
